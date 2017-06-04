@@ -1,0 +1,46 @@
+{
+  "name": "admin-template",
+  "description": "bootstrap admin-template",
+  "version": "0.1.0",
+  "homepage": "https://github.com/yxdh4620/admin-template",
+  "author": {
+    "name": "yxdh4620",
+    "email": "yxdh4620@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yxdh4620/admin-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yxdh4620/admin-template/issues"
+  },
+  "licenses": [
+    {
+      "type": "NA",
+      "url": "https://github.com/yxdh4620/admin-template/blob/master/LICENSE-NA"
+    }
+  ],
+  "main": "index.html",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "coffee": "coffee -o ./lib/ -cw ./src/",
+    "start": "DEBUG=admin* ./node_modules/.bin/nodemon lib/server.js",
+    "jade": " jade -P -w ./templates/index.jade",
+    "clean-swap": "find . -name '*.swp' -print0 | xargs -0 rm -rf  && find . -name '*.swq' -print0 | xargs -0 rm -rf && find . -name '*.swo' -print0 | xargs -0 rm -rf"
+  },
+  "devDependencies": {
+    "coffee-script": "1.8.0"
+  },
+  "keywords": [],
+  "dependencies": {
+    "async": "^2.1.1",
+    "body-parser": "^1.17.2",
+    "commander": "^2.9.0",
+    "debug": "^2.5.2",
+    "express": "4.8.1",
+    "method-override": "^2.3.9",
+    "underscore": "latest"
+  }
+}
