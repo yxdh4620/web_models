@@ -31,7 +31,8 @@
     "clean-swap": "find . -name '*.swp' -print0 | xargs -0 rm -rf  && find . -name '*.swq' -print0 | xargs -0 rm -rf && find . -name '*.swo' -print0 | xargs -0 rm -rf"
   },
   "devDependencies": {
-    "coffee-script": "1.8.0"
+    "coffee-script": "1.8.0",
+    "nodemon": "^1.11.0"
   },
   "keywords": [],
   "dependencies": {
